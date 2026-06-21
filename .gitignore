@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+data/
+warehouse/
+spark-warehouse/
+*.log
+.DS_Store
+models/*.joblib
+dbt/dbt_packages/
+dbt/target/
+dbt/logs/
+dbt/.user.yml
