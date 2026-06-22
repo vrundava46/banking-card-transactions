@@ -1,0 +1,8 @@
+name: card_gold
+version: "1.0"
+profile: card
+model-paths: ["models"]
+models:
+  card_gold:
+    gold:
+      +materialized: table
