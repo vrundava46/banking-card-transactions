@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: approval_monitoring
+    columns:
+      - name: approval_rate
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+  - name: spend_by_mcc
+    columns:
+      - name: mcc
+        tests: [not_null]
+  - name: chargeback_rates
+    columns:
+      - name: chargeback_rate
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+  - name: risk_exposure
+    columns:
+      - name: merchant_country
+        tests: [not_null]
